@@ -47,14 +47,16 @@
 .nivo-lightbox-theme-default .nivo-lightbox-close:hover { opacity: 1; }
 
 .nivo-lightbox-theme-default .nivo-lightbox-title-wrap { bottom: -7%; }
+.nivo-lightbox-theme-default {
+	padding: 7px 15px;
+	border-radius: 30px;
+	/* background: #000;
+	color: #fff; */
+}
 .nivo-lightbox-theme-default .nivo-lightbox-title {
 	font: 14px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-style: normal;
 	font-weight: normal;
-	background: #000;
-	color: #fff;
-	padding: 7px 15px;
-	border-radius: 30px;
 }
 
 .nivo-lightbox-theme-default .nivo-lightbox-image img {
