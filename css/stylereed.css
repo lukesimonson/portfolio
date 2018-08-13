@@ -144,6 +144,7 @@ hr {
   font-style: normal;
   padding-top: 10px;
 }
+
 #home .btn {
   background: transparent;
   border-radius: 0;
@@ -195,14 +196,20 @@ hr {
   padding-top: 80px;
   padding-bottom: 80px;
 }
-#reed .col-md-4 {
+#reed .col-md-3 {
   padding-top: 52px;
 }
 #reed img {
   width: 100%;
   padding-bottom: 18px;
+  opacity: 1;
 }
-#reed .col-md-4 div {
+#reed img:hover {
+  width: 100%;
+  padding-bottom: 18px;
+  opacity: 0.7;
+}
+#reed .col-md-3 div {
   position: relative;
   bottom: 18px;
   padding-bottom: 12px;
@@ -220,9 +227,15 @@ hr {
 #cane .col-md-4 {
   padding-top: 52px;
 }
+#cane img:hover {
+  width: 100%;
+  padding-bottom: 18px;
+  opacity: .7;
+}
 #cane img {
   width: 100%;
   padding-bottom: 18px;
+  opacity: 1;
 }
 #cane .col-md-4 div {
   position: relative;

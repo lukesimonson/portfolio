@@ -40,7 +40,7 @@
 	flex: 1 1 0%;
 	margin-left: 3%;
 	display: flex;
-	align-items: center;
+	align-items: left;
 	padding: 3%;
 }
 .nivo-lightbox-nav { display: none; }
@@ -60,7 +60,7 @@
 	right: 2%;
 }
 
-.nivo-lightbox-image { text-align: left; }
+.nivo-lightbox-image { text-align: center; }
 .nivo-lightbox-image img {
 	max-width: 100%;
 	max-height: 100%;

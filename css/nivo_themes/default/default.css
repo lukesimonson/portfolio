@@ -23,8 +23,8 @@
 	opacity: 0.5;
 }
 .nivo-lightbox-theme-default .nivo-lightbox-nav:hover { 
-	opacity: 1; 
-	background-color: rgba(0,0,0,0.5);
+	opacity: .8; 
+	background-color: rgba(0, 0, 0, 0.5);
 }
 .nivo-lightbox-theme-default .nivo-lightbox-prev { 
 	background-image: url(prev.png); 
@@ -49,12 +49,12 @@
 .nivo-lightbox-theme-default .nivo-lightbox-title-wrap { bottom: -7%; }
 .nivo-lightbox-theme-default {
 	padding: 7px 15px;
-	border-radius: 30px;
+	border-radius: 0px;
 	/* background: #000;
 	color: #fff; */
 }
 .nivo-lightbox-theme-default .nivo-lightbox-title {
-	font: 14px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font: 20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-style: normal;
 	font-weight: normal;
 }
