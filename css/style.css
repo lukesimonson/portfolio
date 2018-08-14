@@ -217,7 +217,7 @@ hr {
   position:absolute;
 }
 
-/* gallery section */
+/* gallery, reed and cane section */
 #gallery, #reed, #cane {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -279,7 +279,7 @@ hr {
 #contact .form-control:focus {
   border-color: #f9f9f9;
 }
-#contact input {
+#contact input, #contact select {
   height: 48px;
 }
 #contact input[type="submit"] {
