@@ -195,7 +195,14 @@ http://www.tooplate.com/view/2076-zentro
 						<input name="emailAddress" type="email" class="form-control" id="email" placeholder="Email address" value required>
 					</div>
 					<div class="col-md-6 col-sm-6">
-						<input name="entry.720730913" type="email" class="form-control" id="billing" placeholder="Paypal or Venmo email address" value required>
+						<select name="entry.1849203120" class="form-control" id="paymenttype" placeholder="Payment type" value required>
+							<option>Please select...</option>
+							<option>PayPal</option>
+							<option>Venmo</option>
+						</select>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<input name="entry.720730913" type="email" class="form-control" id="billing" placeholder="Account email address" value required>
 					</div>
 					<div class="col-md-12 col-sm-12">
 						<textarea name="entry.1040397955" rows="8" class="form-control" id="order" placeholder="Items and quantities" required></textarea>
