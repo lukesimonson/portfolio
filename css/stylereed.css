@@ -37,7 +37,7 @@ hr {
 	width: 120px;
 }
 
-#menu, #reed, #cane {
+#mission, #reed, #cane {
 	padding-top: 100px;
 	padding-bottom: 100px;
 }
@@ -121,7 +121,7 @@ hr {
 }
 
 /* home section */
-#home {
+#homereed {
   background: url('../images/reedheader5.JPG') 50% 0 repeat-y fixed;
   -webkit-background-size: cover;
   background-size: cover;
@@ -138,61 +138,29 @@ hr {
   height: 100vh;
   text-align: center;
 }
-#home h1 {
+#homereed h1 {
   font-size: 25px;
   letter-spacing: 8px;
   font-style: normal;
   padding-top: 10px;
 }
-#home h2 {
+#homereed h2 {
   font-size: 40px;
   font-style: normal;
   padding-top: 10px;
 }
 
-#home .btn {
-  background: transparent;
-  border-radius: 0;
-  border: 3px solid #ffffff;
-  color: #ffffff;
-  font-weight: bold;
-  letter-spacing: 2px;
-  padding: 16px 42px;
-  margin-top: 40px;
-  transition: all 0.4s ease-in-out;
-}
-#home .btn:hover {
-  background: #ffffff;
-  color: #202020;
-}
-
-/* team section */
-#team {
-  text-align: center;
-}
-#team h3 {
-  font-size: 18px;
-  line-height: 4px;
-}
-#team h4 {
-  color: #5C5C5C;
-  padding-top: 24px;
-}
-#team .col-md-4 {
- padding-top: 42px;
-}
-
-/* menu section */
-#menu h4 {
+/* mission section */
+#mission h4 {
 	line-height: 1.5;
 }
-#menu .col-md-8 {
+#mission .col-md-8 {
   padding-bottom: 42px;
 }
-#menu .col-md-6 {
+#mission .col-md-6 {
   padding-bottom: 18px;
 }
-#menu span {
+#mission span {
   color: #5C5C5C;
 }
 
@@ -289,7 +257,7 @@ hr {
 }
 
 /* footer section */
-footer {
+#footerreed {
   background: url('../images/reedheader3.JPG') 50% 0 repeat-y fixed;
   -webkit-background-size: cover;
   background-size: cover;
@@ -298,26 +266,26 @@ footer {
   padding-top: 80px;
   padding-bottom: 80px;
 }
-footer h2 {
+#footerreed h2 {
   padding-bottom: 14px;
 }
-footer h3 {
+#footerreed h3 {
   padding-top: 8px;
 }
-footer p {
+#footerreed p {
   color: #ffffff;
 }
-footer span {
+#footerreed span {
   font-weight: bold;
   padding-left: 24px;
 }
-footer .ph, footer .address {
+#footerreed .ph, #footerreed .address {
   padding-top: 12px;
   padding-bottom: 12px;
 }
-footer .fa {
-  font-size: 12px;
-  padding-right: 10px;
+#footerreed .fa {
+  font-size: 16px;
+  padding-right: 0px;
 }
 
 /* social icon */
