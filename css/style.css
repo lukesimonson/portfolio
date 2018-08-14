@@ -37,11 +37,11 @@ hr {
 	width: 120px;
 }
 
-#menu, #gallery, #team {
+#menu, #gallery, #team, #mission, #reed, #cane {
 	padding-top: 100px;
 	padding-bottom: 100px;
 }
-#menu, #contact {
+#menu, #reed, #contact {
   background: #f0f0f0;
 }
 
@@ -138,9 +138,33 @@ hr {
   height: 100vh;
   text-align: center;
 }
-#home h1 {
+#home h1, #homereed h1{
   font-size: 20px;
   letter-spacing: 8px;
+  font-style: normal;
+  padding-top: 10px;
+}
+
+/* homereed section */
+#homereed {
+  background: url('../images/reedheader5.JPG') 50% 0 repeat-y fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+#homereed h2 {
+  font-size: 40px;
   font-style: normal;
   padding-top: 10px;
 }
@@ -162,16 +186,16 @@ hr {
 }
 
 /* menu section */
-#menu h4 {
+#menu h4, #mission h4 {
 	line-height: 1.5;
 }
-#menu .col-md-8 {
+#menu .col-md-8, #mission .col-md-8 {
   padding-bottom: 42px;
 }
-#menu .col-md-6 {
+#menu .col-md-6, #mission .col-md-6 {
   padding-bottom: 18px;
 }
-#menu span {
+#menu span, #mission span {
   color: #5C5C5C;
 }
 #menu .responsive {
@@ -194,25 +218,45 @@ hr {
 }
 
 /* gallery section */
-#gallery {
+#gallery, #reed, #cane {
   padding-top: 80px;
   padding-bottom: 80px;
 }
-#gallery .col-md-4 {
+#gallery .col-md-4, #cane .col-md-4 {
   padding-top: 52px;
 }
 #gallery img {
   width: 100%;
   padding-bottom: 18px;
 }
-#gallery .col-md-4 div {
+#gallery .col-md-4 div, #cane .col-md-4 div {
   position: relative;
   bottom: 18px;
   padding-bottom: 12px;
 }
-#gallery h3 {
+#gallery h3, #reed h3, #cane h3 {
   font-size: 18px;
   line-height: 8px;
+}
+
+/* reed extras */
+#reed .col-md-3 {
+  padding-top: 52px;
+}
+#reed img, #cane img {
+  width: 100%;
+  padding-bottom: 18px;
+  opacity: 1;
+}
+#reed img:hover, #cane img:hover {
+  width: 100%;
+  padding-bottom: 18px;
+  opacity: 0.7;
+}
+#reed .col-md-3 div {
+  position: relative;
+  bottom: 18px;
+  padding-bottom: 12px;
 }
 
 /* contact section */
@@ -281,6 +325,38 @@ footer .ph, footer .address {
 footer .fa {
   font-size: 12px;
   padding-right: 10px;
+}
+
+/* footer section */
+#footerreed {
+  background: url('../images/reedheader3.JPG') 50% 0 repeat-y fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+#footerreed h2 {
+  padding-bottom: 14px;
+}
+#footerreed h3 {
+  padding-top: 8px;
+}
+#footerreed p {
+  color: #ffffff;
+}
+#footerreed span {
+  font-weight: bold;
+  padding-left: 24px;
+}
+#footerreed .ph, #footerreed .address {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+#footerreed .fa {
+  font-size: 16px;
+  padding-right: 0px;
 }
 
 /* social icon */
