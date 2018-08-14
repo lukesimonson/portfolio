@@ -17,7 +17,7 @@ $(function(){
 
   // ------- JQUERY PARALLAX ---- //
   function initParallax() {
-    $('#home').parallax("100%", 0.1);
+    $('#homereed').parallax("100%", 0.1);
     $('#reed').parallax("100%", 0.3);
     $('#menu').parallax("100%", 0.2);
     $('#cane').parallax("100%", 0.3);
