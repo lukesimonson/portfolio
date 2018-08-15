@@ -109,7 +109,7 @@ hr {
 .navbar-brand, .navbar-nav li a {
   line-height: 28px;
 }
-.navbar-default .navbar-brand  {
+.navbar-default .navbar-brand {
   color: #5C5C5C;
   font-size: 22px;
   font-weight: bold;
@@ -118,6 +118,14 @@ hr {
 .navbar-default .navbar-nav li a {
   font-size: 12px;
   letter-spacing: 1px;
+}
+.navbar-default .navbar-nav li span {
+  line-height: 28px;
+  font-size: 20px;
+  bottom: 2px;
+  position: relative;
+  display: block;
+  padding: 15px 15px;
 }
 
 /* home section */

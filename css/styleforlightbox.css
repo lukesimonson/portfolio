@@ -84,9 +84,11 @@ hr {
 #gallery, #gallerycane, #gallerygouged  {
   padding-top: 15px;
   padding-bottom: 0px;
+
 }
 #gallery .col-md-4 {
   padding-top: 52px;
+  padding-left: 15px;
 }
 #gallerycane .col-md-6, #gallerygouged .col-md-6 {
   padding-top: 70px;
@@ -110,27 +112,28 @@ hr {
   bottom: 18px;
   padding-bottom: 10px;
 }
-#gallery h1, #gallerycane h1, #gallerygouged h1 {
-  font-size: 28px;
-  line-height: 8px;
-}
-#gallery h2, #gallerycane h2, #gallerygouged h2 {
-  font-size: 24px;
-  color: #848484;
-  font-weight: 400;
-  letter-spacing: 0.4px;
-  line-height: 28px;
-}
-#gallery h3, #gallerycane h3, #gallerygouged h3 {
-  color: #848484;
-  font-weight: 400;
-  font-size: 14px;
-  letter-spacing: 0.4px;
-  line-height: 10px;
-}
-#gallery button, #gallerycane button, #gallerygouged button {
+button {
   padding: 1px 1px;
 }
 #gallery .col-md-8, #gallerycane .col-md-5, #gallerygouged .col-md-5 {
-  padding-top: 0px;
+  padding-top: 52px;
+  bottom: 18px;
 }
+  h1 {
+    font-size: 28px;
+    line-height:30px;
+  }
+  h2 {
+    font-size: 20px;
+    color: #848484;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    line-height: 28px;
+  }
+  h3 {
+    color: #848484;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    line-height: 10px;
+  }
