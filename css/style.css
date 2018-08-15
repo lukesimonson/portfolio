@@ -258,6 +258,9 @@ hr {
   font-size: 18px;
   line-height: 8px;
 }
+#gallery .col-md-8 {
+  padding-top: 52px
+}
 
 /* reed extras */
 #reed .col-md-3 {
