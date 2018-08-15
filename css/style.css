@@ -126,6 +126,7 @@ hr {
   position: relative;
   display: block;
   padding: 15px 15px;
+  color: #777;
 }
 
 /* home section */
@@ -193,12 +194,23 @@ hr {
  padding-top: 42px;
 }
 
-/* menu section */
+/* menu and mission section */
 #menu h4, #mission h4 {
 	line-height: 1.5;
 }
-#menu .col-md-8, #mission .col-md-8 {
+#mission h4 {
+  line-height: 1.5;
+  color: #5C5C5C;
+}
+#mission h3 {
+  padding-top: 24px;
+  font-size: 20px;
+}
+#menu .col-md-8, {
   padding-bottom: 42px;
+}
+#mission .col-md-8 {
+  padding-bottom: 0px;
 }
 #menu .col-md-6, #mission .col-md-6 {
   padding-bottom: 18px;
