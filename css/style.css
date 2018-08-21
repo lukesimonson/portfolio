@@ -173,9 +173,10 @@ hr {
   text-align: center;
 }
 #homereed h2 {
-  font-size: 40px;
+  font-size: 32px;
   font-style: normal;
   padding-top: 10px;
+  letter-spacing: 2px;
 }
 
 /* team section */
