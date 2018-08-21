@@ -131,7 +131,7 @@ hr {
 
 /* home section */
 #home {
-  background: url('../images/Lukeoboe3.jpg') 50% 0 repeat-y fixed;
+  background: url('../images/Lukeoboe3A.jpg') 50% 0 repeat-y fixed;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
@@ -212,7 +212,7 @@ hr {
 #mission .col-md-8 {
   padding-bottom: 0px;
 }
-#menu .col-md-6, #mission .col-md-6 {
+#menu .col-md-6, #mission .col-md-6, #menu .col-md-4 {
   padding-bottom: 18px;
 }
 #menu span, #mission span {
@@ -320,7 +320,7 @@ hr {
 
 /* footer section */
 footer {
-  background: url('../images/Lukehead2.jpg') 50% 0 repeat-y fixed;
+  background: url('../images/Lukehead3.jpg') 50% 0 repeat-y fixed;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
