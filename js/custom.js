@@ -36,5 +36,10 @@ $(function(){
         effect: 'fadeScale',
     });
 
+  $('#credits a').nivoLightbox({
+      effect: 'fadeScale',
+  });
+
+
 });
 
