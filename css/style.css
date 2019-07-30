@@ -17,6 +17,7 @@ body
 .heading {
   font-size: 22px;
   font-weight: 500;
+  letter-spacing: 3px;
 }
 
 p {
@@ -38,6 +39,9 @@ hr {
 }
 #menu, #reed, #contact, #gallery {
   background: #f0f0f0;
+}
+#credits {
+  background: #e6e6e6;
 }
 
 .parallax-section {
@@ -146,8 +150,13 @@ hr {
   font-size: 20px;
   letter-spacing: 8px;
   font-style: normal;
-  padding-top: 10px;
+  text-shadow: 2px 2px black;
 }
+#home h2 {
+  letter-spacing: 2px;
+  text-shadow: 2px 2px black; 
+}
+
 
 /* gallery (bio) section */
 #gallery {
@@ -185,22 +194,34 @@ hr {
   font-size: 12 px;
   line-height: 1.5;
 }
-#credits .col-md-4, #credits .col-md-6, #credits .col-md-8 {
+#credits .col-md-4, #credits .col-md-6, #credits .col-md-8, #credits .col-lg-3, #credits .col-lg-7 {
   padding-top: 12px;
   padding-bottom: 12px;
 }
 #credits .col-md-8 {
   padding-bottom: 42px;
 }
+#credits .col-lg-10 {
+  padding: 0px;
+}
 #credits .top2 .col-md-6 {
   padding-top: 0;
+}
+#credits .col-lg-10 .col-md-4 {
+  padding: 3px;
+}
+#credits .col-lg-10 .col-md-12 {
+  padding: 3px;
+}
+#credits .col-lg-10 .col-md-3 {
+  padding: 3px;
 }
 #credits .video-responsive{
   overflow:hidden;
   padding-bottom: 56.25%;
   position:relative;
   height:0;
-  border: 3px solid #0000008c;
+  border: 3px solid #000;
 }
 #credits .video-responsive iframe{
   left:0;
@@ -211,14 +232,21 @@ hr {
 }
 #credits img {
   width: 100%;
-  padding-bottom: 18px;
 }
 #credits h2 {
-  padding-bottom: 20px;
+  font-size: 22px;
+  letter-spacing: 3px;
+  padding: 20px;
 }
 #credits .box:hover .top {
   opacity: 1;
   padding-top: 12px;
+}
+#credits .box:hover .imageblur img {
+  opacity: .3;
+}
+#credits img {
+  transition: .5s ease;
 }
 #credits .box:hover .top2 {
   opacity: 1;
@@ -232,6 +260,9 @@ hr {
 /* menu (media) section */
 #menu h4 {
 	line-height: 1.5;
+}
+#menu hr {
+	padding-bottom: 20px;
 }
 #menu .col-md-6 {
   padding-bottom: 18px;
@@ -470,13 +501,16 @@ footer .fa {
 .image {
   opacity: 1;
   transition: .5s ease;
+  background-color: #000;
+}
+.imageblur {
+  background-color: #000;
 }
 .box {
   position: relative;
   text-align: center;
   transition: .5s ease;
 }
-
 .centered {
   position: absolute;
   top: 50%;
@@ -485,16 +519,15 @@ footer .fa {
   opacity: 0;
   transition: .5s ease;
 }
-
 .bottom {
   position: absolute;
-  bottom: 18px;
+  bottom: 0px;
   opacity: 0;
   transition: .5s ease;
   font-weight: 500;
   font-size: 18px;
   letter-spacing: 0.4px;
-  background-color: #0000008c;
+  background-color: #000000d3;
   color: white;
   padding-top: 20px;
   padding-bottom: 0px;
@@ -503,7 +536,7 @@ footer .fa {
 }
 .top {
   position: absolute;
-  top: 15%;
+  top: 10%;
   opacity: 0;
   transition: .5s ease;
   padding-top: 30px;
