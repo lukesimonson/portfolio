@@ -156,9 +156,15 @@ hr {
   letter-spacing: 2px;
   text-shadow: 2px 2px black; 
 }
-
+#home .col-md-8 {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: #000000b2;
+  border: 3px solid white;
+}
 
 /* gallery (bio) section */
+
 #gallery {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -216,6 +222,9 @@ hr {
 }
 #credits .col-lg-10 .col-md-3 {
   padding: 3px;
+}
+#credits .col-lg-10 .col-md-5 {
+  padding: 18px;
 }
 #credits .video-responsive{
   overflow:hidden;
