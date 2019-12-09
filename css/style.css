@@ -437,10 +437,9 @@ hr {
   color: #ffffff;
 }
 
-
 /* footer section */
 footer {
-  background: url('../images/Lukehead3.jpg') 50% 0 repeat-y fixed;
+  background: url('../images/reedheader3.JPG') 50% 0 repeat-y fixed;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
@@ -710,6 +709,38 @@ footer .fa {
 .social-icon li a:hover {
   background: #F6D76B;
   top: 5px;
+}
+
+ul.leaders {
+  max-width: 40em;
+  padding: 0px;
+  overflow-x: hidden;
+  margin-bottom: 0px;
+  }
+  
+  ul.leaders li:before {
+  float: left;
+  width: 0;
+  white-space: nowrap;
+  content:
+  ". . . . . . . . . . . . . . . . . . . . "
+  ". . . . . . . . . . . . . . . . . . . . "
+  ". . . . . . . . . . . . . . . . . . . . "
+  ". . . . . . . . . . . . . . . . . . . . "
+  }
+  
+  ul.leaders span:first-child {
+  padding-right: 0.33em;
+  background: #f0f0f0;
+  }
+  
+  ul.leaders span + span {
+  float: right;
+  padding-left: 0.33em;
+  background: #f0f0f0;
+  }
+.orderlistleft {
+  padding-left: 15px;
 }
 
 /* copyright section */
