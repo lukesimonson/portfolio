@@ -192,92 +192,6 @@ p {
 #credits {
   text-align: center;
 }
-#credits h4 {
-  color: #5C5C5C;
-  font-size: 20px;
-  line-height: 1.5;
-}
-#credits .col-md-4, #credits .col-md-6, #credits .col-md-8, #credits .col-lg-3, #credits .col-lg-7 {
-  padding: 12px;
-}
-#credits .col-md-8 {
-  padding-bottom: 42px;
-}
-#credits .col-lg-12 {
-  padding: 3px;
-}
-#credits .top2 .col-md-6 {
-  padding-top: 0;
-}
-#credits .col-lg-12 .col-sm-3 {
-  padding: 3px;
-}
-#credits .col-lg-12 .col-sm-4 {
-  padding: 3px;
-}
-#credits .col-lg-12 .col-sm-12 {
-  padding: 3px;
-}
-#credits .col-lg-12 .col-sm-8 {
-  padding: 3px;
-}
-#credits .col-lg-12 .col-sm-9 {
-  padding: 3px;
-}
-#credits .col-lg-12 .col-sm-6 {
-  padding: 3px;
-}
-#credits .col-xs-4 {
-  padding: 3px;
-}
-#credits .col-xs-8 {
-  padding: 3px;
-}
-#credits h6 {
-  font-size: 14px;
-}
-#credits .video-responsive{
-  overflow:hidden;
-  padding-bottom: 56.25%;
-  position:relative;
-  height:0;
-  background: #000; 
-}
-#credits .video-responsive iframe{
-  left:0;
-  top:0;
-  width:100%;
-  height: 100%;
-  position:absolute;
-  border: 3px solid #000;
-}
-#credits .image-responsive{
-  overflow:hidden;
-  padding-bottom: calc((100% - 12px)/2.999);
-  position:relative;
-  height:0;
-  background: #000; 
-}
-#credits .image-responsive img{
-  width:100%;
-  height: auto;
-  position:center;
-}
-#credits .image-responsive2 {
-  overflow:hidden;
-  padding-bottom: calc((100% - 6px)/2);
-  position:relative;
-  height:0;
-  background: #000; 
-}
-#credits .image-responsive2 img{
-  width:100%;
-  height: auto;
-  position:center;
-}
-#credits img {
-  width: 100%;
-}
 #credits h2 {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 28px;
@@ -287,17 +201,38 @@ p {
   font-size: 14px;
   letter-spacing: 3px;
 }
+#credits h4 {
+  color: #5C5C5C;
+  font-size: 20px;
+  line-height: 1.5;
+}
 #credits h5 {
   font-size: 20px;
   letter-spacing: 3px;
   padding-top: 8px;
 }
+#credits h6 {
+  font-size: 14px;
+}
+#credits .col-lg-3, #credits .col-lg-7 {
+  padding: 12px;
+}
+#credits .video-responsive iframe{
+  border: 3px solid #000;
+}
+#credits .col-sm-9 .image-responsive{
+  padding-bottom: calc((100% - 12px)/2.999);
+}
+#credits .col-sm-6 .image-responsive, #credits .col-xs-12 .image-responsive {
+  padding-bottom: calc((100% - 6px)/2);
+}
+#credits img {
+  width: 100%;
+  transition: .5s ease;
+}
 #credits .box:hover .top {
   opacity: 1;
   padding-top: 12px;
-}
-#credits img {
-  transition: .5s ease;
 }
 #credits .box:hover .bottom {
   opacity: 1;
@@ -310,19 +245,6 @@ p {
 }
 #menu .col-sm-6 {
   padding-bottom: 18px;
-}
-#menu .video-responsive{
-  overflow:hidden;
-  padding-bottom:56.25%;
-  position:relative;
-  height:0;
-}
-#menu .video-responsive iframe{
-  left:0;
-  top:0;
-  height:100%;
-  width:100%;
-  position:absolute;
 }
 
 /* team (aka reeds on home page) section */
@@ -391,9 +313,6 @@ p {
 }
 
 /* contact section */
-#contact .col-md-8 {
-  margin-bottom: 32px;
-}
 #contact .form-control {
   background: #ffffff;
   border: none;
@@ -458,9 +377,6 @@ footer .fa {
   transition: .5s ease;
   background-color: #000;
 }
-.imageblur {
-  background-color: #000;
-}
 .box {
   position: relative;
   text-align: center;
@@ -489,14 +405,6 @@ footer .fa {
   text-align: center;
   width: 100%;
 }
-.top {
-  position: absolute;
-  top: 10%;
-  opacity: 0;
-  transition: .5s ease;
-  padding-top: 30px;
-  width: 100%;
-}
 .top2 {
   position: absolute;
   top: 50%;
@@ -516,6 +424,29 @@ footer .fa {
   border: 2px solid #444;
   padding: 12px 32px;
   transition: .5s ease;
+}
+.video-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.video-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+.image-responsive{
+  overflow:hidden;
+  position:relative;
+  height:0;
+}
+.image-responsive img{
+  width:100%;
+  height: auto;
+  position:center;
 }
 
 /* social icon */
