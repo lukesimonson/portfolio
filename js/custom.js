@@ -18,10 +18,10 @@ $(function(){
   // ------- JQUERY PARALLAX ---- //
   function initParallax() {
     $('#home').parallax("100%", 0.1);
-    $('#gallery').parallax("100%", 0.3);
+    $('#bio').parallax("100%", 0.3);
     $('#credits').parallax("100%", 0.2);
-    $('#menu').parallax("100%", 0.2);
-    $('#team').parallax("100%", 0.1);
+    $('#media').parallax("100%", 0.2);
+    $('#reedheader').parallax("100%", 0.1);
     $('#reed').parallax("100%", 0.3);
     $('#contact').parallax("100%", 0.1);
   }

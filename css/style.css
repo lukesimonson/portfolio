@@ -13,7 +13,6 @@ body
     font-weight: 400;
     position: relative;
 	}
-
 .heading {
   font-family: 'Bebas Neue', cursive;
   font-size: 32px;
@@ -42,10 +41,10 @@ p {
   letter-spacing: 0.4px;
   line-height: 28px;
 }
-#gallery, #menu, #team, #reed, #cane, #credits, #contact, #footer {
+#bio, #media, #reedheader, #reed, #credits, #contact, #footer {
 	padding-bottom: 80px;
 }
-#menu, #contact, #gallery {
+#media, #contact, #bio {
   background: #f0f0f0;
 }
 .parallax-section {
@@ -172,22 +171,22 @@ p {
   border: 3px solid white;
 }
 
-/* gallery (bio) section */
-#gallery .col-md-4 {
+/* bio section */
+#bio .col-md-4 {
   padding-top: 6px;
   padding-bottom: 6px;
 }
-#gallery .col-md-4 div {
+#bio .col-md-4 div {
   padding-bottom: 24px;
 }
-#gallery img {
+#bio img {
   width: 100%;
   padding-bottom: 18px;
 }
-#gallery .col-md-8 {
+#bio .col-md-8 {
   padding-bottom: 16px
 }
-#gallery i {
+#bio i {
   font-style: italic;
 }
 
@@ -241,16 +240,16 @@ p {
   padding-bottom: 20px;
 }
 
-/* menu (media) section */
-#menu h4 {
+/* media section */
+#media h4 {
 	line-height: 1.5;
 }
-#menu .col-sm-6 {
+#media .col-sm-6 {
   padding-bottom: 18px;
 }
 
-/* team (aka reeds on home page) section */
-#team {
+/* reedheader section */
+#reedheader {
   padding-top: 0px;
   padding-bottom: 70px;
   background: url('../images/reedheader1.JPG') 50% 0 repeat-y fixed;
@@ -267,17 +266,17 @@ p {
           align-items: center;
   text-align: center;
 }
-#team h4 {
+#reedheader h4 {
   color: white;
   padding: 12px 12px 0px;
   line-height: 1.5;
 }
-#team h3 {
+#reedheader h3 {
   color: white;
   padding-top: 24px;
   font-size: 20px;
 }
-#team .col-xs-12 {
+#reedheader .col-xs-12 {
   background-color: #000000d3;
   padding: 20px;
   border: 3px solid white;
