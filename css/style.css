@@ -177,6 +177,9 @@ p {
   padding-top: 6px;
   padding-bottom: 6px;
 }
+#gallery .col-md-4 div {
+  padding-bottom: 24px;
+}
 #gallery img {
   width: 100%;
   padding-bottom: 18px;
@@ -230,9 +233,8 @@ p {
   width: 100%;
   transition: .5s ease;
 }
-#credits .box:hover .top {
-  opacity: 1;
-  padding-top: 12px;
+#credits .centered {
+  width: 100%;
 }
 #credits .box:hover .bottom {
   opacity: 1;
@@ -297,6 +299,9 @@ p {
 }
 #reed .box {
   background: white;
+}
+#reed .centered {
+  opacity: 0;
 }
 #reed .box:hover .image {
   opacity: .75;
@@ -379,7 +384,6 @@ footer .fa {
 }
 .box {
   position: relative;
-  text-align: center;
   transition: .5s ease;
 }
 .centered {
@@ -387,7 +391,6 @@ footer .fa {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0;
   transition: .5s ease;
 }
 .bottom {
@@ -403,15 +406,6 @@ footer .fa {
   padding-top: 20px;
   padding-bottom: 0px;
   text-align: center;
-  width: 100%;
-}
-.top2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  transition: .5s ease;
   width: 100%;
 }
 .textbox {
