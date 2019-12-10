@@ -30,6 +30,7 @@ hr {
   border: 3px solid #444444;
   position: relative;
   top: -40px;
+  text-align: center;
 }
 .shadow hr {
   margin-top: 0px;
@@ -50,6 +51,9 @@ p {
 .parallax-section {
   background-attachment: fixed !important;
   background-size: cover !important;
+}
+.pad3 {
+  padding: 3px;
 }
 
 /* preloader section */
@@ -229,7 +233,7 @@ p {
 #credits .col-xs-8 {
   padding: 3px;
 }
-#credits h5 {
+#credits h6 {
   font-size: 14px;
 }
 #credits .video-responsive{
