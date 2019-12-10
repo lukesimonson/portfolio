@@ -42,7 +42,7 @@ p {
   line-height: 28px;
 }
 #gallery, #menu, #team, #reed, #cane, #credits, #contact, #footer {
-	padding-bottom: 100px;
+	padding-bottom: 80px;
 }
 #menu, #contact, #gallery {
   background: #f0f0f0;
