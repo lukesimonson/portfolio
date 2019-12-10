@@ -376,6 +376,51 @@ footer .fa {
 }
 
 
+/* lightbox */
+#lightbox {
+  padding-top: 52px;
+  padding-bottom: 40px;
+}
+#lightbox img {
+  padding-top: 20px;
+  padding-bottom: 6px;
+  width: 100%;
+}
+#lightbox button {
+  padding: 1px 1px;
+}
+#lightbox button img{
+  padding: 0px;
+}
+#lightbox h1 {
+  font-size: 28px;
+  line-height:30px;
+}
+#lightbox h2 {
+  font-size: 20px;
+  color: #848484;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  line-height: 28px;
+  padding-bottom: 30px;
+}
+#lightbox h3 {
+  color: #848484;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  line-height: 10px;
+  margin: 8px;
+}
+#lightbox p {
+  color: #848484;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  line-height: 28px;
+  padding-bottom: 30px
+}
+
 /* containers */
 .image {
   opacity: 1;
