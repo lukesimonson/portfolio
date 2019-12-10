@@ -19,10 +19,11 @@ $(function(){
   function initParallax() {
     $('#home').parallax("100%", 0.1);
     $('#gallery').parallax("100%", 0.3);
+    $('#credits').parallax("100%", 0.2);
     $('#menu').parallax("100%", 0.2);
-    $('#team').parallax("100%", 0.3);
+    $('#team').parallax("100%", 0.1);
+    $('#reed').parallax("100%", 0.3);
     $('#contact').parallax("100%", 0.1);
-
   }
   initParallax();
 
@@ -32,13 +33,9 @@ $(function(){
     });
 
   // NIVO LIGHTBOX
-  $('#gallery a').nivoLightbox({
-        effect: 'fadeScale',
-    });
-
-  $('#credits a').nivoLightbox({
-      effect: 'fadeScale',
-  });
+  $('#reed a').nivoLightbox({
+    effect: 'fadeScale',
+});
 
 
 });
