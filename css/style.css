@@ -216,6 +216,12 @@ p {
 #credits h6 {
   font-size: 14px;
 }
+#credits .fa {
+  text-align: right;
+  font-size: 32px;
+  padding-right: 10px;
+  position: absolute;
+}
 #credits .col-lg-3, #credits .col-lg-7 {
   padding: 12px;
 }
