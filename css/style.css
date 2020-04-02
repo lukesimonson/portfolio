@@ -52,7 +52,11 @@ p {
   background-size: cover !important;
 }
 .pad3 {
+  
   padding: 3px;
+}
+.box-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* preloader section */
@@ -177,11 +181,12 @@ p {
   padding-bottom: 6px;
 }
 #bio .col-md-4 div {
+  padding-top: 18px;
   padding-bottom: 24px;
 }
 #bio img {
   width: 100%;
-  padding-bottom: 18px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #bio .col-md-8 {
   padding-bottom: 16px
@@ -198,12 +203,14 @@ p {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 28px;
   letter-spacing: 5px;
+  margin-top: 0;
 }
 #credits h3 {
   font-size: 14px;
   letter-spacing: 3px;
 }
 #credits h4 {
+  padding: 16px;
   color: #5C5C5C;
   font-size: 20px;
   line-height: 1.5;
@@ -216,6 +223,9 @@ p {
 #credits h6 {
   font-size: 14px;
 }
+#credits  {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 #credits .fa {
   text-align: right;
   font-size: 32px;
@@ -223,7 +233,7 @@ p {
   position: absolute;
 }
 #credits .col-lg-3, #credits .col-lg-7 {
-  padding: 12px;
+  padding: 0px 12px 12px;
 }
 #credits .video-responsive iframe{
   border: 3px solid #000;
