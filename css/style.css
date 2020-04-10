@@ -164,7 +164,7 @@ p {
   text-shadow: 2px 2px 5px black;
 }
 #home h2 {
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   text-shadow: 2px 2px 5px black; 
 }
 #home .col-md-8 {
@@ -240,6 +240,9 @@ p {
   position: absolute;
   background: none;
   line-height: 28px;
+}
+#credits .social-icon li a:hover {
+  color: #F6D76B;
 }
 #credits .video-responsive {
   border: 2px solid #000;
