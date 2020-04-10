@@ -39,9 +39,6 @@ $(function(){
   $('#reed a').nivoLightbox({
     effect: 'fadeScale',
   });
-  $(document).ready(function(){
-    $('a').not('.fa').nivoLightbox();
-  });
 
 });
 
