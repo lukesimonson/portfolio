@@ -33,13 +33,15 @@ $(function(){
     });
 
   // NIVO LIGHTBOX
-  $('#credits a').nivoLightbox({
+  $('#credits .film a').nivoLightbox({
     effect: 'fadeScale',
   });
   $('#reed a').nivoLightbox({
     effect: 'fadeScale',
   });
-
+  $(document).ready(function(){
+    $('a').not('.fa').nivoLightbox();
+  });
 
 });
 

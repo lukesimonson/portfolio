@@ -227,24 +227,19 @@ p {
 #credits h6 {
   font-size: 14px;
 }
-#credits .col-sm-4{
+#credits .film .col-sm-4 {
   margin: 0;
   padding: 6px;
 }
-#credits .box-shadow .image-responsive {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-#credits .box-shadow .pic {
+#credits .box-shadow .image-responsive, #credits .box-shadow img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #credits .fa {
-  text-align: right;
-  font-size: 32px;
-  padding-right: 10px;
+  text-align: left;
+  font-size: 28px;
   position: absolute;
-}
-#credits .col-lg-3, #credits .col-lg-7 {
-  padding: 0px 12px 12px;
+  background: none;
+  line-height: 28px;
 }
 #credits .video-responsive {
   border: 2px solid #000;
@@ -258,12 +253,17 @@ p {
 #credits .col-sm-4 .image-responsive{
   padding-bottom: calc((100% * 3)/2.01);
 }
+#credits .videogames .col-sm-4 .image-responsive{
+  padding-bottom: calc(50% - 3px);
+}
 #credits img {
   width: 100%;
   transition: .5s ease;
 }
 #credits .centered {
   width: 100%;
+  top: 3%;
+  left: 3%;
 }
 #credits .box:hover .bottom {
   opacity: 1;
@@ -313,6 +313,7 @@ p {
   background-color: #000000d3;
   padding: 20px;
   border: 3px solid white;
+  padding: 3px;
 }
 
 /* reed section */
@@ -550,7 +551,7 @@ footer .fa {
 .social-icon li a {
   background: #5c5c5c;
   border-radius: 50%;
-  color: #5C5C5C;
+  color: #ffffff;
   font-size: 16px;
   width: 48px;
   height: 48px;
