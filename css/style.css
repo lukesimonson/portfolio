@@ -281,7 +281,9 @@ p {
   padding-bottom: 8px;
   margin-bottom: 0px;
 }
-
+#media .pad0 {
+  padding: 0;
+}
 #media h4 {
   font-weight: 500;
   font-size: 18px;
