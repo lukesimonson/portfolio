@@ -274,15 +274,35 @@ p {
 }
 
 /* media section */
+#media h1 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.5;
+  padding-bottom: 8px;
+  margin-bottom: 0px;
+}
+
 #media h4 {
-	line-height: 1.5;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  padding-bottom: 8px;
+  margin-bottom: 0px;
 }
-#media .col-sm-6 {
-  padding-bottom: 18px;
+.col-sm-12 hr {
+	border-top: 2px solid #828282;
+  width: 200px;
+  margin-left: 0;
+  margin-top: 10px;
 }
-#media .video-responsive {
+#media .col-sm-4, #media .col-sm-6 {
+  padding: 6px;
+}
+#media .box {
+  background-color: #ffffff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 
 /* reedheader section */
 #reedheader {
