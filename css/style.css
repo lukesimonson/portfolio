@@ -291,7 +291,7 @@ p {
   padding-bottom: 8px;
   margin-bottom: 0px;
 }
-.col-sm-12 hr {
+.text-left hr {
 	border-top: 2px solid #828282;
   width: 200px;
   margin-left: 0;
