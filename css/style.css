@@ -334,9 +334,8 @@ p {
   padding-top: 24px;
   font-size: 20px;
 }
-#reedheader .col-xs-12 {
+#reedheader .col-sm-10 {
   background-color: #000000d3;
-  padding: 20px;
   border: 3px solid white;
   padding: 3px;
 }
