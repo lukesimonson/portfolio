@@ -227,7 +227,7 @@ p {
 #credits h6 {
   font-size: 14px;
 }
-#credits .film .col-sm-4 {
+#credits .film .col-sm-4, #credits .film .col-sm-3 {
   margin: 0;
   padding: 6px;
 }
@@ -253,7 +253,7 @@ p {
 #credits .col-sm-6 .image-responsive, #credits .col-xs-12 .image-responsive {
   padding-bottom: calc((100% - 6px)/2);
 }
-#credits .col-sm-4 .image-responsive{
+#credits .col-sm-4 .image-responsive, #credits .col-sm-3 .image-responsive{
   padding-bottom: calc((100% * 3)/2.01);
 }
 #credits .videogames .col-sm-4 .image-responsive{
