@@ -26,7 +26,7 @@ hr {
 .shadow {
   background: white;
   box-shadow: 5px 5px 5px grey;
-  border: 3px solid #444444;
+  border: 2px solid #444444;
   position: relative;
   top: -40px;
   text-align: center;
@@ -202,10 +202,17 @@ p {
   color: #ffffff;
 }
 #credits h2 {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'barlow', sans-serif;
   font-size: 28px;
-  letter-spacing: 5px;
+  font-weight: 300;
+  letter-spacing: 3px;
   margin-top: 0;
+  margin-bottom: 30px;
+}
+#credits h2 hr {
+  border-top: 1px solid #828282;
+  width: 300px;
+  margin-top: 15px;
 }
 #credits h3 {
   color: #3b5998;
@@ -217,12 +224,6 @@ p {
   color: #5C5C5C;
   font-size: 20px;
   line-height: 1.5;
-}
-#credits h5 {
-  color: #3b5998;
-  font-size: 20px;
-  letter-spacing: 3px;
-  padding-top: 8px;
 }
 #credits h6 {
   font-size: 14px;
@@ -274,15 +275,16 @@ p {
 }
 
 /* media section */
-#media h1 {
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 1.5;
-  padding-bottom: 8px;
-  margin-bottom: 0px;
-}
+
 #media .pad0 {
   padding: 0;
+}
+#media h2 {
+  font-family: 'barlow', sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin: 40px;
 }
 #media h4 {
   font-weight: 500;
@@ -297,7 +299,7 @@ p {
   margin-left: 0;
   margin-top: 10px;
 }
-#media .col-sm-4, #media .col-sm-6 {
+#media .col-sm-6 {
   padding: 6px;
 }
 #media .box {
