@@ -206,8 +206,7 @@ p {
   font-size: 28px;
   font-weight: 300;
   letter-spacing: 3px;
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin: 35px 0px 35px;
 }
 #credits h2 hr {
   border-top: 1px solid #828282;
@@ -276,7 +275,7 @@ p {
 
 /* media section */
 
-#media .pad0 {
+.pad0 {
   padding: 0;
 }
 #media h2 {
