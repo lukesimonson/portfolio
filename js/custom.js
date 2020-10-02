@@ -2,13 +2,6 @@
 // preloader
 $(window).load(function(){
     $('.preloader').fadeOut(1000); // set duration in brackets    
-    window.onload = function() {
-      var $recaptcha = document.querySelector('#g-recaptcha-response');
-  
-      if($recaptcha) {
-          $recaptcha.setAttribute("required", "required");
-      }
-  };
 });
 
 /* HTML document is loaded. DOM is ready. 
@@ -48,3 +41,20 @@ $(function(){
   });
 
 });
+
+document.getElementById("my_captcha_form").addEventListener("submit",function(evt)
+  {
+  
+  var response = grecaptcha.getResponse();
+  if(response.length == 0) 
+  { 
+    //reCaptcha not verified
+    alert("please verify you are human!"); 
+    evt.preventDefault();
+    return false;
+  }
+  //captcha verified
+  //do the rest of your validations here
+  
+});
+
