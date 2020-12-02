@@ -259,6 +259,9 @@ p {
 #credits .videogames .col-sm-4 .image-responsive{
   padding-bottom: calc(50% - 3px);
 }
+#credits .videogames .col-sm-12 .image-responsive{
+  padding-bottom: calc((100% - 12px)/3);
+}
 #credits img {
   width: 100%;
   transition: .5s ease;
@@ -464,6 +467,8 @@ footer .fa {
   z-index: -999999;
   opacity: 0;
 }
+
+
 
 /* lightbox */
 #lightbox {

@@ -46,15 +46,14 @@ document.getElementById("mG61Hd").addEventListener("submit",function(evt)
   {
   
   var response = grecaptcha.getResponse();
-  if(response.length == 0) 
+  if(response == 0) 
   { 
     //reCaptcha not verified
-    alert("please verify you are human!"); 
-    evt.preventDefault();
-    return false;
+    //alert("please verify you are human!"); 
+    //evt.preventDefault();
+    //return false;
   }
   //captcha verified
   //do the rest of your validations here
   
 });
-
