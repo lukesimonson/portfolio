@@ -775,7 +775,7 @@ http://www.tooplate.com/view/2076-zentro
 <script type="text/javascript" src="jPlayer-2.9.2/jPlayer-2.9.2/lib/jquery.min.js"></script>
 <script type="text/javascript" src="jPlayer-2.9.2/jPlayer-2.9.2/dist/jplayer/jquery.jplayer.min.js"></script>
 <script type="text/javascript">
-$(document).ready(function(){
+$(document).ready(function (){
 	/*var playernumber = ["#jquery_jplayer_1", "#jquery_jplayer_2"];
 	var mediatitle = ["But At What Cost?", "Talking to God"];
 	var mediafile = ["audio/greyhoundmaintheme.wav", "audio/talkingtogod.wav"];
@@ -783,10 +783,29 @@ for (let i = 0; i < playernumber.length; i++) { */
 $("#jquery_jplayer_1").jPlayer({
 	ready: function () {
 		$(this).jPlayer("setMedia", {
-			title: "But at What Cost",
+			title: "But at What Cost?",
 			wav: "audio/greyhoundmaintheme.wav"
 		});
 	},
+	cssSelectorAncestor: "#jp_container_1",
+	swfPath: "../../dist/jplayer",
+	supplied: "wav",
+	wmode: "window",
+	useStateClassSkin: true,
+	autoBlur: false,
+	smoothPlayBar: true,
+	keyEnabled: true,
+	remainingDuration: true,
+	toggleDuration: true
+});
+$("#jquery_jplayer_2").jPlayer({
+	ready: function () {
+		$(this).jPlayer("setMedia", {
+			title: "Talking to God",
+			wav: "audio/talkingtogod.wav"
+		});
+	},
+	cssSelectorAncestor: "#jp_container_2",
 	swfPath: "../../dist/jplayer",
 	supplied: "wav",
 	wmode: "window",
