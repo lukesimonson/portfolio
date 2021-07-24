@@ -775,19 +775,19 @@ http://www.tooplate.com/view/2076-zentro
 <script type="text/javascript" src="jPlayer-2.9.2/jPlayer-2.9.2/lib/jquery.min.js"></script>
 <script type="text/javascript" src="jPlayer-2.9.2/jPlayer-2.9.2/dist/jplayer/jquery.jplayer.min.js"></script>
 <script type="text/javascript">
-$(document).ready(function (){
+function multiplayers(n, t, f){
 	/*var playernumber = ["#jquery_jplayer_1", "#jquery_jplayer_2"];
 	var mediatitle = ["But At What Cost?", "Talking to God"];
 	var mediafile = ["audio/greyhoundmaintheme.wav", "audio/talkingtogod.wav"];
 for (let i = 0; i < playernumber.length; i++) { */
-$("#jquery_jplayer_1").jPlayer({
+$("#jquery_jplayer_" + n).jPlayer({
 	ready: function () {
 		$(this).jPlayer("setMedia", {
-			title: "But at What Cost?",
-			wav: "audio/greyhoundmaintheme.wav"
+			title: t,
+			wav: f
 		});
 	},
-	cssSelectorAncestor: "#jp_container_1",
+	cssSelectorAncestor: "#jp_container_" + n,
 	swfPath: "../../dist/jplayer",
 	supplied: "wav",
 	wmode: "window",
@@ -798,7 +798,9 @@ $("#jquery_jplayer_1").jPlayer({
 	remainingDuration: true,
 	toggleDuration: true
 });
-$("#jquery_jplayer_2").jPlayer({
+
+
+/*$("#jquery_jplayer_2").jPlayer({
 	ready: function () {
 		$(this).jPlayer("setMedia", {
 			title: "Talking to God",
@@ -815,9 +817,13 @@ $("#jquery_jplayer_2").jPlayer({
 	keyEnabled: true,
 	remainingDuration: true,
 	toggleDuration: true
+});*/
+};
+$(document).ready(function() {
+multiplayers(1, "But At What Cost?", "audio/greyhoundmaintheme.wav");
+multiplayers(2, "Talking to God", "audio/talkingtogod.wav");
 });
-//}
-});
+
 </script>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
