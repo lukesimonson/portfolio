@@ -234,9 +234,17 @@ p {
 #credits .box-shadow .image-responsive, #credits .box-shadow img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-#credits .fa {
+#credits .fa-spotify,
+#credits .fa-link {
   text-align: left;
   font-size: 28px;
+  position: absolute;
+  background: none;
+  line-height: 28px;
+}
+#credits .fa-headphones {
+  text-align: left;
+  font-size: 18px;
   position: absolute;
   background: none;
   line-height: 28px;
@@ -271,9 +279,22 @@ p {
   top: 3%;
   left: 3%;
 }
+
 #credits .box:hover .bottom {
   opacity: 1;
   padding-bottom: 20px;
+}
+#credits .box:hover .bottomaudio,
+#credits .box:focus-within .bottomaudio {
+  opacity: 1;
+  bottom: 0;
+}
+#credits .box:hover .headphone,
+#credits .box:focus-within .headphone {
+  bottom: calc(3% + 110px);
+}
+#credits audio {
+  padding: 4px;
 }
 
 /* media section */
@@ -541,12 +562,20 @@ footer .fa {
 }
 .box {
   position: relative;
+  overflow: hidden;
   transition: .5s ease;
 }
 .centered {
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .5s ease;
+}
+.headphone {
+  position: absolute;
+  bottom: 3%;
+  left: 3%;
   transform: translate(-50%, -50%);
   transition: .5s ease;
 }
@@ -562,6 +591,20 @@ footer .fa {
   color: white;
   padding-top: 20px;
   padding-bottom: 0px;
+  text-align: center;
+  width: 100%;
+}
+.bottomaudio {
+  position: absolute;
+  overflow: hidden;
+  bottom: -110px;
+  opacity: 1;
+  transition: .5s ease;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.4px;
+  background-color: #ccc;
+  color: white;
   text-align: center;
   width: 100%;
 }
@@ -626,7 +669,9 @@ footer .fa {
   position: relative;
   padding: 0;
 }
-.social-icon li a:hover {
+
+.social-icon li .fa-spotify:hover,
+.social-icon li .fa-link:hover {
   background: #F6D76B;
   top: 5px;
 }

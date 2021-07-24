@@ -21,6 +21,7 @@ http://www.tooplate.com/view/2076-zentro
 	<link rel="stylesheet" href="css/nivo-lightbox.css">
 	<link rel="stylesheet" href="css/nivo_themes/default/default.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link href="jPlayer-2.9.2/jPlayer-2.9.2/dist/skin/blue.monday/css/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700&display=swap" rel="stylesheet">
@@ -107,14 +108,30 @@ http://www.tooplate.com/view/2076-zentro
 			<div class="col-xs-12 pad3 film box-shadow">
 				<div class="col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0.2s">
 					<div class="box">
-						<div class="image-responsive"><a href="https://youtu.be/eyzxu26-Wqk"><img src="images/Greyhound32.jpg" alt="gallery img"></a></div>
-						<div class="bottom"><a href="https://youtu.be/eyzxu26-Wqk">View Trailer</a></div>
+						<div class="image-responsive"><img src="images/Greyhound32.jpg" alt="gallery img"></div>
+						<div class="headphone social-icon">
+							<li><span><a class="fa fa-headphones wow bounceIn" data-wow-delay="0.3s"></a></span></li>
+						</div>
+						<div class="bottomaudio">
+							<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+							<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+								<div class="jp-type-single"></div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0.2s">						
 					<div class="box">
 						<div class="image-responsive"><a href="https://youtu.be/GqoEs4cG6Uw"><img src="images/Harriet32.jpg" alt="gallery img"></a></div>
-						<div class="bottom"><a href="https://youtu.be/GqoEs4cG6Uw">View Trailer</a></div>
+						<div class="headphone social-icon">
+							<li><span><a class="fa fa-headphones wow bounceIn" data-wow-delay="0.3s"></a></span></li>
+						</div>
+						<div class="bottomaudio">
+							<div id="jquery_jplayer_2" class="jp-jplayer"></div>
+							<div id="jp_container_2" class="jp-audio" role="application" aria-label="media player">
+								<div class="jp-type-single"></div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0.2s">
@@ -403,6 +420,38 @@ http://www.tooplate.com/view/2076-zentro
 						</div>
 					</div>
 				</div>
+				<div class="col-sm-3 col-xs-6 pad3 wow fadeIn" data-wow-delay="0.4s">
+					<div class="box">
+						<img src="images/Stand.jpg" alt="gallery img">
+						<div class="centered social-icon">
+							<li><span><a href="https://open.spotify.com/album/7MDgK8frCnHDvTrLUFZKHD" target="_blank" class="fa fa-spotify wow bounceIn" data-wow-delay="0.3s"></a></span></li>
+						</div>
+					</div>
+				</div>	
+				<div class="col-sm-3 col-xs-6 pad3 wow fadeIn" data-wow-delay="0.4s">
+					<div class="box">
+						<img src="images/Havanna.jpg" alt="gallery img">
+						<div class="centered social-icon">
+							<li><span><a href="https://open.spotify.com/album/4d3fnUoaNTDlLAfj8Cprre" target="_blank" class="fa fa-spotify wow bounceIn" data-wow-delay="0.3s"></a></span></li>
+						</div>
+					</div>
+				</div>	
+				<div class="col-sm-3 col-xs-6 pad3 wow fadeIn" data-wow-delay="0.4s">
+					<div class="box">
+						<img src="images/ATimeForLove.jpg" alt="gallery img">
+						<div class="centered social-icon">
+							<li><span><a style="color:#800000" href="https://open.spotify.com/album/1hM5vgAD7I01qYI9CZ6vVd" target="_blank" class="fa fa-spotify wow bounceIn" data-wow-delay="0.3s"></a></span></li>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-6 pad3 wow fadeIn" data-wow-delay="0.4s">
+					<div class="box">
+						<img src="images/YouveGotAFriend.jpg" alt="gallery img">
+						<div class="centered social-icon">
+							<li><span><a style="color:rgb(175, 0, 175)" href="https://open.spotify.com/album/5EQDYpkFj1YD2oeb3eQvc6" target="_blank" class="fa fa-spotify wow bounceIn" data-wow-delay="0.3s"></a></span></li>
+						</div>
+					</div>
+				</div>	
 			</div>
 		</div>
 	</div>
@@ -672,7 +721,6 @@ http://www.tooplate.com/view/2076-zentro
 	</div>
 </section>
 
-
 <!-- footer section -->
 <footer class="parallax-section">
 	<div class="container">
@@ -724,6 +772,34 @@ http://www.tooplate.com/view/2076-zentro
 <script src="js/nivo-lightbox.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/custom.js"></script>
+<script type="text/javascript" src="jPlayer-2.9.2/jPlayer-2.9.2/lib/jquery.min.js"></script>
+<script type="text/javascript" src="jPlayer-2.9.2/jPlayer-2.9.2/dist/jplayer/jquery.jplayer.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	/*var playernumber = ["#jquery_jplayer_1", "#jquery_jplayer_2"];
+	var mediatitle = ["But At What Cost?", "Talking to God"];
+	var mediafile = ["audio/greyhoundmaintheme.wav", "audio/talkingtogod.wav"];
+for (let i = 0; i < playernumber.length; i++) { */
+$("#jquery_jplayer_1").jPlayer({
+	ready: function () {
+		$(this).jPlayer("setMedia", {
+			title: "But at What Cost",
+			wav: "audio/greyhoundmaintheme.wav"
+		});
+	},
+	swfPath: "../../dist/jplayer",
+	supplied: "wav",
+	wmode: "window",
+	useStateClassSkin: true,
+	autoBlur: false,
+	smoothPlayBar: true,
+	keyEnabled: true,
+	remainingDuration: true,
+	toggleDuration: true
+});
+//}
+});
+</script>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>
