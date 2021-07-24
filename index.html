@@ -105,7 +105,18 @@ http://www.tooplate.com/view/2076-zentro
 				</div>
 			</div>
 			<div class="col-xs-12 text-center"><h2  style="margin-top:0px">Film and TV</h2></div>
+			
 			<div class="col-xs-12 pad3 film box-shadow">
+				<div class="col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0.2s">
+					<div class="box">
+						<div class="image-responsive"><img src="images/PawPatrol.jpg" alt="gallery img"></div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0.2s">
+						<div class="box">
+							<div class="image-responsive"><img src="images/MyLittlePony32.jpg" alt="gallery img"></div>
+						</div>
+					</div>
 				<div class="col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0.2s">
 					<div class="box">
 						<div class="image-responsive"><img src="images/Greyhound32.jpg" alt="gallery img"></div>
@@ -122,7 +133,7 @@ http://www.tooplate.com/view/2076-zentro
 				</div>
 				<div class="col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0.2s">						
 					<div class="box">
-						<div class="image-responsive"><a href="https://youtu.be/GqoEs4cG6Uw"><img src="images/Harriet32.jpg" alt="gallery img"></a></div>
+						<div class="image-responsive"><img src="images/Harriet32.jpg" alt="gallery img"></a></div>
 						<div class="headphone social-icon">
 							<li><span><a class="fa fa-headphones wow bounceIn" data-wow-delay="0.3s"></a></span></li>
 						</div>
@@ -161,7 +172,15 @@ http://www.tooplate.com/view/2076-zentro
 				<div class="col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0.2s">
 					<div class="box">
 						<div class="image-responsive"><a href="https://youtu.be/1htuNZp82Ck"><img src="images/Talesfromtheloop.jpg" alt="gallery img"></a></div>
-						<div class="bottom"><a href="https://youtu.be/1htuNZp82Ck">View Trailer</a></div>
+						<div class="headphone social-icon">
+							<li><span><a class="fa fa-headphones wow bounceIn" data-wow-delay="0.3s" style="color: black"></a></span></li>
+						</div>
+						<div class="bottomaudio">
+							<div id="jquery_jplayer_3" class="jp-jplayer"></div>
+							<div id="jp_container_3" class="jp-audio" role="application" aria-label="media player">
+								<div class="jp-type-single"></div>
+							</div>
+						</div>
 					</div>
 				</div>
 				
@@ -776,10 +795,6 @@ http://www.tooplate.com/view/2076-zentro
 <script type="text/javascript" src="jPlayer-2.9.2/jPlayer-2.9.2/dist/jplayer/jquery.jplayer.min.js"></script>
 <script type="text/javascript">
 function multiplayers(n, t, f){
-	/*var playernumber = ["#jquery_jplayer_1", "#jquery_jplayer_2"];
-	var mediatitle = ["But At What Cost?", "Talking to God"];
-	var mediafile = ["audio/greyhoundmaintheme.wav", "audio/talkingtogod.wav"];
-for (let i = 0; i < playernumber.length; i++) { */
 $("#jquery_jplayer_" + n).jPlayer({
 	ready: function () {
 		$(this).jPlayer("setMedia", {
@@ -798,30 +813,11 @@ $("#jquery_jplayer_" + n).jPlayer({
 	remainingDuration: true,
 	toggleDuration: true
 });
-
-
-/*$("#jquery_jplayer_2").jPlayer({
-	ready: function () {
-		$(this).jPlayer("setMedia", {
-			title: "Talking to God",
-			wav: "audio/talkingtogod.wav"
-		});
-	},
-	cssSelectorAncestor: "#jp_container_2",
-	swfPath: "../../dist/jplayer",
-	supplied: "wav",
-	wmode: "window",
-	useStateClassSkin: true,
-	autoBlur: false,
-	smoothPlayBar: true,
-	keyEnabled: true,
-	remainingDuration: true,
-	toggleDuration: true
-});*/
 };
 $(document).ready(function() {
 multiplayers(1, "But At What Cost?", "audio/greyhoundmaintheme.wav");
 multiplayers(2, "Talking to God", "audio/talkingtogod.wav");
+multiplayers(3, "Asking the Guard", "audio/askingtheguard.wav")
 });
 
 </script>
