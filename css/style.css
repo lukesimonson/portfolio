@@ -291,7 +291,7 @@ p {
 }
 #credits .box:hover .headphone,
 #credits .box:focus-within .headphone {
-  bottom: calc(3% + 110px);
+  bottom: 120px;
 }
 #credits audio {
   padding: 4px;
@@ -574,8 +574,8 @@ footer .fa {
 }
 .headphone {
   position: absolute;
-  bottom: 3%;
-  left: 3%;
+  bottom: 10px;
+  left: 6px;
   transform: translate(-50%, -50%);
   transition: .5s ease;
 }
