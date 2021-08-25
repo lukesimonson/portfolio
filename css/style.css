@@ -249,6 +249,7 @@ p {
   position: absolute;
   background: none;
   line-height: 28px;
+  color: black;
 }
 #credits .social-icon li a:hover {
   color: #F6D76B;
@@ -579,6 +580,16 @@ footer .fa {
   left: 6px;
   transform: translate(-50%, -50%);
   transition: .5s ease;
+}
+.triangle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+	height: 0;
+	border-left: 0px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 50px solid white;
 }
 .bottom {
   position: absolute;
