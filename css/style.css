@@ -291,10 +291,6 @@ p {
   opacity: 1;
   bottom: 0;
 }
-#credits .box:hover .headphone,
-#credits .box:focus-within .headphone {
-  bottom: 120px;
-}
 #credits audio {
   padding: 4px;
 }
