@@ -272,6 +272,9 @@ p {
 #credits .videogames .col-sm-12 .image-responsive{
   padding-bottom: calc((100% - 12px)/3);
 }
+#credits .other .col-sm-3 .image-responsive{
+  padding-bottom: 100%;
+}
 #credits img {
   width: 100%;
   transition: .5s ease;
@@ -569,6 +572,13 @@ footer .fa {
   left: 50%;
   transform: translate(-50%, -50%);
   transition: .5s ease;
+}
+.centeredimage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
 }
 .headphone {
   position: absolute;
