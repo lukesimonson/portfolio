@@ -21,7 +21,7 @@ http://www.tooplate.com/view/2076-zentro
 	<link rel="stylesheet" href="css/nivo-lightbox.css">
 	<link rel="stylesheet" href="css/nivo_themes/default/default.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link href="jPlayer-2.9.2/jPlayer-2.9.2/dist/skin/blue.monday/css/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+	<link href="jPlayer-2.9.2/jPlayer-2.9.2/dist/skin/blue.monday/css/jplayer.blue.monday.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700&display=swap" rel="stylesheet">
@@ -896,7 +896,7 @@ http://www.tooplate.com/view/2076-zentro
 <script src="js/nivo-lightbox.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/custom.js"></script>
-<script type="text/javascript" src="jPlayer-2.9.2/jPlayer-2.9.2/lib/jquery.min.js"></script>
+<!--<script type="text/javascript" src="jPlayer-2.9.2/jPlayer-2.9.2/lib/jquery.min.js"></script> -->
 <script type="text/javascript" src="jPlayer-2.9.2/jPlayer-2.9.2/dist/jplayer/jquery.jplayer.min.js"></script>
 <script type="text/javascript">
 function multiplayers(n, t, f){
@@ -919,7 +919,7 @@ $("#jquery_jplayer_" + n).jPlayer({
 	toggleDuration: true
 });
 };
-$(document).ready(function() {
+$(document).ready(function setMultiplayers() {
 multiplayers(1, "But At What Cost?", "audio/greyhoundmaintheme.wav");
 multiplayers(2, "Talking to God", "audio/talkingtogod.wav");
 multiplayers(3, "Asking the Guard", "audio/askingtheguard.wav");
@@ -929,7 +929,7 @@ multiplayers(6, "Smarting Over the Dog", "audio/smartingoverthedog.wav");
 multiplayers(7, "The One (Game Version)", "audio/theone.wav");
 multiplayers(8, "Guardian of the Fireflies", "audio/guardianofthefireflies.wav");
 multiplayers(9, "solitude", "audio/solitude.wav")
-multiplayers(10, "Scripture Lullabies Sampler", )
+multiplayers(10, "Scripture Lullabies Sampler", "audio/scripturelullabiessampler.wav")
 multiplayers(11, "Disney Princess Medley", "audio/disneyprincessmedley.wav" )
 multiplayers(12, "O Holy Night", "audio/oholynight.wav")
 });
