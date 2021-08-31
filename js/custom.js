@@ -48,5 +48,21 @@ $(function(){
     effect: 'fadeScale',
   });
 
+
+
+document.getElementById("mG61Hd").addEventListener("submit",function(evt)
+  {
+  
+  var response = grecaptcha.getResponse();
+  if(response == 0) 
+  { 
+    //reCaptcha not verified
+    //alert("please verify you are human!"); 
+    //evt.preventDefault();
+    //return false;
+  }
+  //captcha verified
+  //do the rest of your validations here
+}); 
 });
 
