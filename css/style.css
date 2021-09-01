@@ -560,7 +560,6 @@ footer .fa {
   top: 6px;
   left: 6px;
   display: inline-block;
-  transition: .5s ease;
 }
 .spotify .fa {
   top: 0;
@@ -656,18 +655,19 @@ footer .fa {
   display: inline-block;
 }
 .social-icon a {
-  background: none;
-  border-radius: 50%;
-  color: #5c5c5c;
+  top: 0%;
+  color:white;
   font-size: 28px;
+  margin-left: 3px;
   text-align: left;
   text-decoration: none;
   transition: all 0.4s ease-in-out;
   position: absolute;
 }
-
-.social-icon .fa-spotify:hover,
-.social-icon .fa-link:hover {
+.social-icon span{
+  margin-left: 60px
+}
+.social-icon .fa:hover {
   color: #F6D76B;
   top: 5px;
 }
