@@ -198,9 +198,6 @@ p {
 #credits {
   text-align: center;
 }
-#credits a {
-  color: #ffffff;
-}
 #credits h2 {
   font-family: 'barlow', sans-serif;
   font-size: 28px;
@@ -231,31 +228,8 @@ p {
   margin: 0;
   padding: 6px;
 }
-#credits .box-shadow .box 
-/* #credits .box-shadow img */ {
+#credits .box-shadow .box {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-#credits .fa-spotify,
-#credits .fa-link {
-  text-align: left;
-  font-size: 28px;
-  position: absolute;
-  background: none;
-  line-height: 28px;
-}
-#credits .fa-headphones {
-  text-align: left;
-  font-size: 18px;
-  position: absolute;
-  background: none;
-  line-height: 28px;
-  color: black;
-}
-#credits .social-icon li a:hover {
-  color: #F6D76B;
-}
-#credits .video-responsive {
-  border: 2px solid #000;
 }
 #credits .col-sm-9 .image-responsive{
   padding-bottom: calc((100% - 12px)/2.999);
@@ -279,12 +253,6 @@ p {
   width: 100%;
   transition: .5s ease;
 }
-#credits .centered {
-  width: 100%;
-  top: 3%;
-  left: 3%;
-}
-
 #credits .box:hover .bottom {
   opacity: 1;
   padding-bottom: 20px;
@@ -294,8 +262,8 @@ p {
   opacity: 1;
   bottom: 0;
 }
-#credits audio {
-  padding: 4px;
+#credits .centered {
+  width: 100%;
 }
 
 /* media section */
@@ -573,19 +541,40 @@ footer .fa {
   transform: translate(-50%, -50%);
   transition: .5s ease;
 }
-.centeredimage {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-}
 .headphone {
   position: absolute;
-  bottom: 10px;
+  bottom: 22px;
   left: 6px;
-  transform: translate(-50%, -50%);
+  display: inline-block;
+}
+.headphone .fa {
+  background: none;
+  font-size: 18px;
+  text-align: left;
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  color: black;
+}
+.spotify {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  display: inline-block;
   transition: .5s ease;
+}
+.spotify .fa {
+  top: 0;
+  background: none;
+  font-size: 28px;
+  text-decoration: none;
+  text-align: left;
+  transition: .4s ease;
+  position: absolute;
+  color: white;
+}
+.spotify .fa:hover {
+  color: #F6D76B;
+  top: 5px;
 }
 .triangle {
   position: absolute;
@@ -663,33 +652,23 @@ footer .fa {
 /* social icon */
 .social-icon {
   padding: 0;
-}
-.social-icon li {
   list-style: none;
   display: inline-block;
-  padding: 0;
 }
-.social-icon li a {
-  background: #ffffff;
+.social-icon a {
+  background: none;
   border-radius: 50%;
   color: #5c5c5c;
-  font-size: 16px;
-  width: 48px;
-  height: 48px;
-  line-height: 48px;
-  text-align: center;
+  font-size: 28px;
+  text-align: left;
   text-decoration: none;
   transition: all 0.4s ease-in-out;
-  margin-top: 12px;
-  margin-right: 16px;
-  top: 0;
-  position: relative;
-  padding: 0;
+  position: absolute;
 }
 
-.social-icon li .fa-spotify:hover,
-.social-icon li .fa-link:hover {
-  background: #F6D76B;
+.social-icon .fa-spotify:hover,
+.social-icon .fa-link:hover {
+  color: #F6D76B;
   top: 5px;
 }
 
