@@ -231,7 +231,15 @@
   position: absolute;
   top: 40px;
   right: 5%;
-  width: 30%; }
+  width: 80px; }
+
+@media only screen and (max-width: 992px ) {
+  .film .jp-volume-controls,
+  .other .jp-volume-controls {
+    top: 50px;
+    left: calc(5% + 45px);
+   }
+  }
 
 .jp-audio-stream .jp-volume-controls {
   left: 70px; }
@@ -279,8 +287,8 @@
   overflow: hidden;
   background: url("../image/jplayer.blue.monday.jpg") 0 -250px repeat-x;
   top: 5px;
-  left: 22px;
-  width: 30%;
+  left: 20px;
+  width: 35px;
   height: 5px;
   cursor: pointer; }
 
@@ -295,9 +303,15 @@
   position: absolute;
   top: 40px; }
 
+@media only screen and (max-width: 992px ) {
+  .film .jp-audio .jp-time-holder,
+  .other .jp-audio .jp-time-holder {
+    position: absolute;
+    top: 30px; }
+}
+
 .jp-audio .jp-type-single .jp-time-holder {
-  left: calc(5% + 45px);
-  width: 45%; }
+  left: calc(5% + 45px); }
 
 .jp-audio .jp-type-playlist .jp-time-holder {
   left: 166px;
