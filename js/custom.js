@@ -63,7 +63,6 @@ for(let k = 0; k < findcreateplayer.length; k++) {
   findxout[k].setAttribute("id", "xout" + dig);
   findjpplayer[k].setAttribute("id", "jquery_jplayer_"+ dig);
   findjpaudio[k].setAttribute("id", "jp_container_" + dig);
-  console.log("second loop", k);
 };
 
 
@@ -75,7 +74,6 @@ for (let j = 0; j < findcreateplayer.length; j++) {
       clickhead.addEventListener("click", function() { openPlayer(digit); }, false);
       clickx.addEventListener("click", function() { closePlayer(digit); }, false)
   }()); // immediate invocation
-  console.log("first loop", j);
 };
 
 /* HTML document is loaded. DOM is ready. 
