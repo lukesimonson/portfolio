@@ -581,7 +581,7 @@ footer .fa {
   font-size: 28px;
   text-decoration: none;
   text-align: left;
-  transition: .4s ease;
+  transition: .5s ease;
   position: absolute;
   color: white;
 }
@@ -598,7 +598,7 @@ footer .fa {
 	border-left: 0px solid transparent;
 	border-right: 50px solid transparent;
 	border-bottom: 50px solid rgba(0, 0, 0, 0.8);
-  transition: .3s ease;
+  transition: .5s ease;
   transition-delay: 0s;
 }
 .triangle-clicked {
