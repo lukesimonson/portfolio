@@ -33,7 +33,7 @@
   font-family: Verdana, Arial, sans-serif;
   line-height: 1.6;
   color:#666;
-  background-color: #eee; }
+  background: none; }
 
 .jp-audio {
   width: 100%; }
@@ -86,12 +86,12 @@
   left: 0; }
 
 .jp-interface {
-  position: relative;
   background-color: #eee;
-  width: 100%; }
+  width: 100%;}
 
 .jp-audio .jp-interface {
-  height: 80px; }
+  height: 0;
+background: none; }
 
 .jp-audio-stream .jp-interface {
   height: 80px; }
@@ -102,7 +102,7 @@
   clear: both;
   width: 100%;
   margin: 0 auto;
-  position: relative;
+  position: absolute;
   overflow: hidden;
   top: -8px;
   /* This negative value depends on the size of the text in jp-currentTime and jp-duration */ }
@@ -113,7 +113,7 @@
   overflow: hidden; }
 
 .jp-audio .jp-controls {
-  width: 380px;
+  width: 100%;
   padding: 28px 5% 0 5%;
    }
 
@@ -143,20 +143,33 @@
   cursor: pointer; }
 
 .jp-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .5s ease;
   width: 40px;
-  height: 40px; }
+  height: 40px; 
+  background-size: cover;
+  background-color: transparent;}
 
 .jp-play {
-  background: url("../image/jplayer.blue.monday.jpg") 0 0 no-repeat;}
+  background-image: url("../image/play-solid.png");
+  background-size: cover;
+   }
 
 .jp-play:focus {
-  background: url("../image/jplayer.blue.monday.jpg") -41px 0 no-repeat; }
+  background-image: url("../image/play-solid.png");
+  background-size: cover; }
+ 
 
 .jp-state-playing .jp-play {
-  background: url("../image/jplayer.blue.monday.jpg") 0 -42px no-repeat; }
+  background-image: url("../image/pause-solid.png");
+  background-size: cover; }
 
 .jp-state-playing .jp-play:focus {
-  background: url("../image/jplayer.blue.monday.jpg") -41px -42px no-repeat; }
+  background-image: url("../image/pause-solid.png"); 
+  background-size: cover;}
 
 .jp-stop, .jp-previous, .jp-next {
   width: 28px;
@@ -190,7 +203,7 @@
 
 .jp-audio .jp-progress {
   position: absolute;
-  top: 12px;
+  bottom: 40px;
   height: 8px; }
 
 .jp-audio .jp-type-single .jp-progress {
@@ -198,7 +211,7 @@
   width: 90%; }
 
 .jp-audio .jp-type-playlist .jp-progress {
-  left: 166px;
+  left: 5%;
   width: 130px; }
 
 .jp-video .jp-progress {
@@ -208,13 +221,13 @@
   height: 10px; }
 
 .jp-seek-bar {
-  background: url("../image/jplayer.blue.monday.jpg") 0 -202px repeat-x;
+  background-color: #999; 
   width: 0px;
   height: 100%;
   cursor: pointer; }
 
 .jp-play-bar {
-  background: url("../image/jplayer.blue.monday.jpg") 0 -218px repeat-x;
+  background-color: white;
   width: 0px;
   height: 100%; }
 
@@ -229,10 +242,12 @@
 
 .jp-volume-controls {
   position: absolute;
-  top: 40px;
+  bottom: 15px;
   right: 5%;
-  width: 80px; }
+  width: 80px;
+  height: 16px; }
 
+ /* 
 @media only screen and (max-width: 992px ) {
   .film .jp-volume-controls,
   .other .jp-volume-controls {
@@ -240,7 +255,7 @@
     left: calc(5% + 45px);
    }
   }
-
+*/
 .jp-audio-stream .jp-volume-controls {
   left: 70px; }
 
@@ -254,46 +269,54 @@
   overflow: hidden;
   text-indent: -9999px;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  background-size: cover; }
 
 .jp-mute,
 .jp-volume-max {
   width: 18px;
-  height: 15px; }
+  height: 18px;
+ }
 
 .jp-volume-max {
   right: 0px; }
 
 .jp-mute {
-  background: url("../image/jplayer.blue.monday.jpg") 0 -170px no-repeat; }
+  background: url("../image/volume-down-solid.png");
+  background-size: cover; }
 
 .jp-mute:focus {
-  background: url("../image/jplayer.blue.monday.jpg") -19px -170px no-repeat; }
+  background: url("../image/volume-down-solid.png");
+  background-size: cover; }
 
 .jp-state-muted .jp-mute {
-  background: url("../image/jplayer.blue.monday.jpg") -60px -170px no-repeat; }
+  background: url("../image/volume-mute-solid.png");
+  background-size: cover; }
 
 .jp-state-muted .jp-mute:focus {
-  background: url("../image/jplayer.blue.monday.jpg") -79px -170px no-repeat; }
+  background: url("../image/volume-mute-solid.png");
+  background-size: cover; }
 
 .jp-volume-max {
-  background: url("../image/jplayer.blue.monday.jpg") 0 -186px no-repeat; }
+  background: url("../image/volume-up-solid.png");
+  background-size: cover; }
 
 .jp-volume-max:focus {
-  background: url("../image/jplayer.blue.monday.jpg") -19px -186px no-repeat; }
+  background: url("../image/volume-up-solid.png");
+  background-size: cover; }
 
 .jp-volume-bar {
   position: absolute;
   overflow: hidden;
-  background: url("../image/jplayer.blue.monday.jpg") 0 -250px repeat-x;
-  top: 5px;
+  background-color: #999;
+  top: 6px;
   left: 20px;
   width: 35px;
   height: 5px;
   cursor: pointer; }
 
 .jp-volume-bar-value {
-  background: url("../image/jplayer.blue.monday.jpg") 0 -256px repeat-x;
+  background-color: white;
   width: 0px;
   height: 5px; }
 
@@ -301,17 +324,11 @@
 /* @group current time and duration */
 .jp-audio .jp-time-holder {
   position: absolute;
-  top: 40px; }
-
-@media only screen and (max-width: 992px ) {
-  .film .jp-audio .jp-time-holder,
-  .other .jp-audio .jp-time-holder {
-    position: absolute;
-    top: 30px; }
-}
+  bottom: 15px;
+  color: white; }
 
 .jp-audio .jp-type-single .jp-time-holder {
-  left: calc(5% + 45px); }
+  left: 5%; }
 
 .jp-audio .jp-type-playlist .jp-time-holder {
   left: 166px;
@@ -343,14 +360,19 @@
 /* @end */
 /* @group playlist */
 .jp-details {
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
+  font-size: 20px;
   text-align: center;
-  cursor: default; }
+  cursor: default;
+  color: white;
+  position: relative;
+  top: 10px;}
 
 .jp-details,
 .jp-playlist {
   width: 100%;
-  background-color: #ccc;
+  background: none;
   border-top: 1px solid #009be3; }
 
 .jp-type-single .jp-details,
@@ -559,5 +581,20 @@ span.jp-artist {
   display: block;
   text-align: center;
   font-weight: bold; }
+
+.xout {
+  position: absolute;
+  top:12px;
+  right: 12px;
+  width: 18px;
+  height: 18px;
+  background: url("../image/times-solid-grey.png");
+  background-size: cover;
+  cursor: pointer;
+}
+.xout:hover {
+  background: url("../image/times-solid.png");
+  background-size: cover;
+}
 
 /* @end */

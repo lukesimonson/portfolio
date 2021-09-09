@@ -237,10 +237,13 @@ p {
 #credits .col-sm-6 .image-responsive, #credits .col-xs-12 .image-responsive {
   padding-bottom: calc((100% - 6px)/2);
 }
-#credits .col-sm-4 .image-responsive, #credits .col-sm-3 .image-responsive{
+#credits .col-sm-4 .image-responsive, 
+#credits .col-sm-3 .image-responsive,
+#credits .film .bottomaudio {
   padding-bottom: calc((100% * 3)/2.01);
 }
-#credits .videogames .col-sm-4 .image-responsive{
+#credits .videogames .col-sm-4 .image-responsive, 
+#credits .videogames .col-sm-4 .image-responsive .bottomaudio {
   padding-bottom: calc(50% - 3px);
 }
 #credits .videogames .col-sm-12 .image-responsive{
@@ -253,19 +256,19 @@ p {
   width: 100%;
   transition: .5s ease;
 }
-#credits .box:hover .bottom {
-  opacity: 1;
-  padding-bottom: 20px;
-}
-#credits .box:hover .bottomaudio,
-#credits .box:focus-within .bottomaudio {
-  opacity: 1;
-  bottom: 0;
-}
 #credits .centered {
   width: 100%;
 }
-
+#credits .headphone:hover .fa {
+  top: 3px;
+  color: #F6D76B;;
+}
+@media only screen and (max-width: 768px) {
+  .changesize .bottomaudio {
+    padding-bottom: calc(50% - 3px);
+  }
+  
+}
 /* media section */
 
 .pad0 {
@@ -546,14 +549,25 @@ footer .fa {
   bottom: 22px;
   left: 6px;
   display: inline-block;
+  transition: .5s ease;
+}
+.headphone-clicked {
+  bottom:50%;
+  left: 50%;
 }
 .headphone .fa {
+  width: 18px;
+  height: 18px;
   background: none;
   font-size: 18px;
   text-align: left;
   transition: all 0.4s ease-in-out;
   position: absolute;
-  color: black;
+  color:white;
+  opacity: 1;
+  cursor: pointer;
+  top: 0;
+  transition: .5s ease;
 }
 .spotify {
   position: absolute;
@@ -583,7 +597,13 @@ footer .fa {
 	height: 0;
 	border-left: 0px solid transparent;
 	border-right: 50px solid transparent;
-	border-bottom: 50px solid white;
+	border-bottom: 50px solid rgba(0, 0, 0, 0.8);
+  transition: .3s ease;
+  transition-delay: 0s;
+}
+.triangle-clicked {
+	border-right: 1000px solid transparent;
+	border-bottom: 1000px solid rgba(0, 0, 0, 0.8);
 }
 .bottom {
   position: absolute;
@@ -603,16 +623,23 @@ footer .fa {
 .bottomaudio {
   position: absolute;
   overflow: hidden;
-  bottom: -110px;
-  opacity: 1;
+  top: 100%;
+  left: -100%;
+  height: 0;
+  opacity: 0;
   transition: .5s ease;
   font-weight: 500;
   font-size: 18px;
   letter-spacing: 0.4px;
-  background-color: #ccc;
-  color: white;
+  background-color: transparent;
   text-align: center;
   width: 100%;
+  padding-bottom: 100%;
+}
+.bottomaudio-clicked {
+  opacity: 1;
+  top: 0;
+  left: 0;
 }
 .textbox {
   font-weight: 200;
