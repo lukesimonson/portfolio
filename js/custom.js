@@ -23,6 +23,24 @@ for(let i = 0; i < findsingles.length; i++) {
   findsingles[i].innerHTML = jptypesinglecode;
 };
 */
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.previousElementSibling;
+    var fade = panel.lastElementChild;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+      fade.style.opacity = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+      fade.style.opacity = 0;
+    }
+  });
+}
+
 for(let i = 0; i < findcreateplayer.length; i++) {
   findcreateplayer[i].innerHTML = createplayercode;
 };

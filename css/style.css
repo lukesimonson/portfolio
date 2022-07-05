@@ -5,6 +5,39 @@ Template 2076 Zentro
 http://www.tooplate.com/view/2076-zentro
 
 */
+.fade-background {
+  background: transparent;
+  background-image: linear-gradient(transparent, 2%, #ffffff);
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  bottom: 68px;
+  opacity: 1;
+  transition: .4s ease-out;
+}
+
+.accordion {
+  background-color: transparent;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  transition: 5s;
+}
+
+.accordion:hover {
+  color: #ccc;
+}
+
+.panel {
+  margin: 0px;
+  max-height: 80px;
+  overflow: hidden;
+  transition: .4s ease-out;
+}
 
 body
 	{
