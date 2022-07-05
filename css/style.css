@@ -5,6 +5,15 @@ Template 2076 Zentro
 http://www.tooplate.com/view/2076-zentro
 
 */
+.before-panel{
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.panel-padding{
+  padding-bottom: 12px;
+}
+
 .fade-background {
   background: transparent;
   background-image: linear-gradient(transparent, 2%, #ffffff);
@@ -24,7 +33,7 @@ http://www.tooplate.com/view/2076-zentro
   width: 100%;
   border: none;
   outline: none;
-  font-size: 24px;
+  font-size: 20px;
   transition: 5s;
 }
 
