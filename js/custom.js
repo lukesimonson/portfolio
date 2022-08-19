@@ -34,10 +34,12 @@ for (i = 0; i < acc.length; i++) {
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
       fade.style.opacity = null;
+      fade.style.display = null;
       this.innerHTML = "+ See More";
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
       fade.style.opacity = 0;
+      fade.style.display = "none";
       this.innerHTML = "- See Less";
     }
   });
